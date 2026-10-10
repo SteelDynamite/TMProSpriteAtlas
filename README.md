@@ -19,4 +19,8 @@ Install as a git package ([How to)](https://docs.unity3d.com/Manual/upm-ui-gitur
 3) From here it will be used the same way as normal Sprite Assewts in Text Mesh Pro with the exception of  a new button at the top of the inspector to update from the Atlas
 <img width="719" alt="Image" src="https://github.com/user-attachments/assets/633883ef-4fe0-44bb-b4a0-0f532dc734eb" />
 
+## TextMesh Pro multi-page typography
+
+Set Face Info on the root `TMPSpriteAtlas`, then use **Update from SpriteAtlas**. Generated fallback pages inherit the root's complete Face Info on each update, including existing pages. Do not tune Face Info separately on generated pages: repacking can move a sprite to another page, and regeneration overwrites those page settings. A root Point Size of zero retains TMP's font-derived sprite sizing on every page.
+
 
